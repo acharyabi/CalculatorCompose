@@ -60,16 +60,7 @@ fun Calculator(
                             onAction(CalculatorAction.Clear)
                         }
                     )
-                    CalculatorButton(
-                        symbol = "AC" ,
-                        modifier = Modifier
-                            .background(LightGray)
-                            .aspectRatio(1f)
-                            .weight(1f),
-                        onClick = {
-                            onAction(CalculatorAction.Clear)
-                        }
-                    )
+
                     CalculatorButton(
                         symbol = "Del" ,
                         modifier = Modifier
@@ -90,31 +81,11 @@ fun Calculator(
                             onAction(CalculatorAction.Operation(CalculatorOperation.Divide))
                         }
                     )
-                    CalculatorButton(
-                        symbol = "AC" ,
-                        modifier = Modifier
-                            .background(LightGray)
-                            .aspectRatio(1f)
-                            .weight(1f),
-                        onClick = {
-                            onAction(CalculatorAction.Clear)
-                        }
-                    )
                     }
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(buttonSpacing)
             ){
-                CalculatorButton(
-                    symbol = "AC" ,
-                    modifier = Modifier
-                        .background(LightGray)
-                        .aspectRatio(1f)
-                        .weight(1f),
-                    onClick = {
-                        onAction(CalculatorAction.Clear)
-                    }
-                )
                 CalculatorButton(
                     symbol = "7" ,
                     modifier = Modifier
@@ -205,16 +176,6 @@ fun Calculator(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(buttonSpacing)
             ){
-                CalculatorButton(
-                    symbol = "AC" ,
-                    modifier = Modifier
-                        .background(LightGray)
-                        .aspectRatio(1f)
-                        .weight(1f),
-                    onClick = {
-                        onAction(CalculatorAction.Clear)
-                    }
-                )
                 CalculatorButton(
                     symbol = "1" ,
                     modifier = Modifier
